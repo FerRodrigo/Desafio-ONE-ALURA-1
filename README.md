@@ -13,7 +13,14 @@ Aprender a programação na forma de uma desafio. Foi disponibilizado o CSS e HT
 ![Exemplo do Resultado](readme/tela_result_projeto1.png)
 ![Exemplo do Resultado](readme/tela_result_projeto2.png)
 ## Minha experiência
-Estou no inicio da lógica de programação e tive bastante dificuldade em colocar em pratica o projeto, foi desafiador. Não estava nem um pouco familiarizado com a linguagem técnica da área e nem com a linguagem especifica (HTML, CSS e JavaScript) Foi divertido aprender, se não fosse os foruns e os recursos da internet. Eu levaria muito mais tempo para fazer sozinho. Pegava alguns exemplos e procurava entender a lógica de programar. Posso dizer que avancei, mas falta muita coisa ainda...   
+Estou no inicio da lógica de programação e tive bastante dificuldade em colocar em pratica o projeto, foi desafiador. Não estava nem um pouco familiarizado com a linguagem técnica da área e nem com a linguagem especifica (HTML, CSS e JavaScript) Foi divertido aprender, se não fosse os foruns e os recursos da internet. Eu levaria muito mais tempo para fazer sozinho. Pegava alguns exemplos e procurava entender a lógica de programar. Posso dizer que avancei, mas falta muita coisa ainda...
+
+## Créditos
+
+- **[Cursos da Alura](www.alura.com.br)** - HTML, CSS e Javascript. 
+
+  
+
 
 
 
