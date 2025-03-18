@@ -10,18 +10,24 @@ let amigos = [];
 // Função para adicionar um amigo à lista
 function adicionarAmigo() {
     const nome = inputAmigo.value.trim(); // Captura o valor do campo de texto
+    const nomeNormalizado = nome.toLowerCase();
+
+    if (nome === '') {
+        alert('Por favor, digite um nome válido.');
+        return; // Impede o processamento se o nome for vazio
+    }
 
     // Verifica se o nome é válido e não foi adicionado antes
-    if (nome !== '' && !amigos.includes(nome)) {
-        amigos.push(nome); // Adiciona o nome ao array
+    if (nome !== '' && !amigos.includes(nomeNormalizado)) {
+        amigos.push(nomeNormalizado); // Adiciona o nome ao array
         const itemLista = document.createElement('li'); // Cria um novo <li>
         itemLista.textContent = nome; // Define o texto do <li>
         listaAmigos.appendChild(itemLista); // Adiciona o <li> à lista visual
+
         inputAmigo.value = ''; // Limpa o campo de texto
-    } else if (amigos.includes(nome)) {
-        alert('Este nome já foi adicionado!');
+        alert('Nome adicionado com sucesso!'); // Feedback para o usuário
     } else {
-        alert('Por favor, digite um nome válido.');
+        alert('Este nome já foi adicionado!');
     }
 }
 

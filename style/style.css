@@ -145,6 +145,7 @@ ul {
 /* Botão de sortear título */
 .button-draw {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 10px 40px;
@@ -153,10 +154,23 @@ ul {
     font-size: 16px;
 }
 
+.button-draw_limpar_lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    gap: 10%;
+}
+
 .button-draw img {
     margin-right: 40px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+
 }
