@@ -63,6 +63,6 @@ function sortearAmigo() {
     resultado.appendChild(itemResultado);
 
 
-    // Remove o nome sorteado da lista de amigos (opcional)
+    // Remove o nome sorteado da lista de amigos (op)
     amigos.splice(indiceSorteado, 1);
 }
