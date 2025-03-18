@@ -4,8 +4,13 @@ const inputAmigo = document.getElementById('amigo');
 const listaAmigos = document.getElementById('listaAmigos');
 const resultado = document.getElementById('resultado');
 
+
 // Array para armazenar os nomes
 let amigos = [];
+
+function formatarNome(nome) {
+    return nome.charAt(0).toUpperCase() + nome.slice(1).toLowerCase();
+}
 
 // Função para adicionar um amigo à lista
 function adicionarAmigo() {
@@ -18,8 +23,8 @@ function adicionarAmigo() {
     }
 
     // Verifica se o nome é válido e não foi adicionado antes
-    if (nome !== '' && !amigos.includes(nomeNormalizado)) {
-        amigos.push(nomeNormalizado); // Adiciona o nome ao array
+    if (!amigos.some(amigo => amigo.normalizado === nomeNormalizado)) {
+        amigos.push({ original: nome, normalizado: nomeNormalizado });// Adiciona o nome ao array
         const itemLista = document.createElement('li'); // Cria um novo <li>
         itemLista.textContent = nome; // Define o texto do <li>
         listaAmigos.appendChild(itemLista); // Adiciona o <li> à lista visual
@@ -54,8 +59,9 @@ function sortearAmigo() {
     // Exibe o nome sorteado na lista de resultados
     resultado.innerHTML = ''; // Limpa o resultado anterior
     const itemResultado = document.createElement('li');
-    itemResultado.textContent = amigoSorteado;
+    itemResultado.textContent = formatarNome(amigoSorteado.original);
     resultado.appendChild(itemResultado);
+
 
     // Remove o nome sorteado da lista de amigos (opcional)
     amigos.splice(indiceSorteado, 1);
